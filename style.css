@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b3b;
+}
+
+.card-container {
+    width: 300px;
+    padding: 24px;
+    max-width: 80%;
+    max-width: 80%;
+
+    background-color: #13132a;
+    border-radius: 8px;
+
+    animation: bloor 3s infinite ease-in-out;
+}
+
+@keyframes bloor {
+    0% {
+        box-shadow: 0px 0px 5px 3px #0b6e1f;
+    }
+    50% {
+        box-shadow: 0px 0px 5px 5px #09b02a;
+    }
+    100% {
+        box-shadow: 0px 0px 5px 3px #0b6e1f;
+    }
+}
+
+.card {
+    display: grid;
+    place-items: center;
+}
+
+.card__image {
+    width: 250px;
+    height: 250px;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.card__about-me {
+    margin: 10px 0;
+    color: #dfdfdf;
+}
+
+.card__about-me h1 {
+    color: #09b02a;
+}
+
+.card__about-me h4 {
+    margin-bottom: 5px;
+    color: #0b6e1f;
+}
+
+.card__about-me p {
+    font-size: 15px;
+}
+
+.card__footer {
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.card__footer i {
+    padding: 5px 10px;
+    font-size: 25px;
+    background-color: #0b6e1f;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0px 5px;
+    color: aliceblue;
+    transition: .5s all ease;
+}
+
+.card__footer i:hover {
+    background-color: #09b02a;
+}
